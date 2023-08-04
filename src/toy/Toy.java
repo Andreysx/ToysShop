@@ -1,6 +1,6 @@
 package toy;
 
-public class Toy {
+public class Toy implements ToyStandart{
 
     int id;
     String name;
@@ -31,4 +31,21 @@ public class Toy {
     public int getQuantity() {
         return quantity;
     }
+
+//    public String getToyInfo(){
+//
+//    }
+
+
+
+    @Override
+    public String toString(){
+        return "ID игрушки: " + id +
+                "\nИмя игрушки: " + name +
+                "\nЧастота выпадения: " + dropchance +
+                "\nКоличетсво: " + quantity;
+    }
+
+
+
 }
